@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+## Dubbo 服务消费者配置
+spring.dubbo :
+  application.name: PrepareLessonConsumer
+  registry.address: zookeeper://127.0.0.1:2181
+  scan: com.zqy.stage.preparelesson.process
+
+## Freemarker 配置
+## 文件配置路径
+spring:
+  freemarker:
+    template-loader-path: classpath:/ftl/
+    cache: false
+    charset: utf-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+
+

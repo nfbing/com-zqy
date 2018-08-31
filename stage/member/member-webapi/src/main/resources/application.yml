@@ -1,0 +1,9 @@
+server:
+  port: 8084
+
+
+  ## Dubbo 服务消费者配置
+spring.dubbo :
+  application.name: MemberConsumer
+  registry.address: zookeeper://127.0.0.1:2181
+  scan: com.zqy.stage.member.web.process
