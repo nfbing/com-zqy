@@ -44,7 +44,7 @@
             <version>${mybatis-spring-boot}</version>
         </dependency>
 
-        <!-- MySQL 连接驱动依赖 -->
+        <!-- MySQL 连接驱动依赖-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
